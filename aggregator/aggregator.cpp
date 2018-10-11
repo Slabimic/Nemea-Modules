@@ -668,7 +668,7 @@ int main(int argc, char **argv)
             }
          }
          if (new_time_window) {
-            send_record_out(OutputTemplate::out_tmplt, stored_rec)
+            send_record_out(OutputTemplate::out_tmplt, stored_rec);
             init_record_data(in_tmplt, in_rec, OutputTemplate::out_tmplt, stored_rec);
          }
          else {
